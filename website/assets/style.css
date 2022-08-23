@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+}
+
+.lock-body {
+    background-color: rgb(183, 2, 2);
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: change-background 5s linear alternate infinite;
+}
+
+.money-body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("money.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 60%;
+    background-size: cover;
+
+}
+
+img {
+    margin: 2% 32% 0 32%;
+    width: 500px;
+
+}
+
+input {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    width: 230px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-button {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 10px 35px;
+    background-color: silver;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 90px;
+    text-align: center;
+}
+
+@keyframes change-background {
+    0% {
+        background-color: rgb(183, 2, 2);
+    }
+
+    100% {
+        background-color: rgb(59, 1, 1);
+    }
+
+}
+
+.main-body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 60%;
+    background-size: cover;
+}
+
+.enter-button {
+    background-color: rgb(183, 2, 2);
+    border: none;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    transition: 0.3s ease;
+    margin: 0 54% 0 46%;
+}
+
+.enter-button:hover {
+    color: rgb(183, 2, 2);
+    background-color: #c6c6c6;
+}
+
+.success {
+    font-size: 700%;
+    color: black;
+    font-weight: 900;
+    padding: 70px 25px;
+    width: 500px;
+    text-align: center;
+    text-shadow: #c6c6c6 2px 1px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    animation: text-color-change 0.2s alternate infinite;
+}
+
+@keyframes text-color-change {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: green;
+    }
+
+}
